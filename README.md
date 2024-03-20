@@ -1,7 +1,7 @@
 # Modulo de Machine Learning 
 ## 💰: Proyecto: Proyeccion Económica y Demanda Laboral
 **Curso de procesamiendo de datos con Machine Learning, BEDU**   
-*Ivanka Shaitd Benitez Rivera, Jessica Vega González*   
+*Ivanka Shaitd Benitez Rivera*   
 ![imagen](imagenes/act_economicas.jpg)
 
 ---
