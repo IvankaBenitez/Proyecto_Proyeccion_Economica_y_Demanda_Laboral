@@ -27,7 +27,7 @@ Se opto por trabajar desde el entorno de Google Colab, esto con el fin de poder 
 
 En donde se analizó la estructura de cada archivo para determinar era necesario crear nuevas tablas. Derivado de este análisis se concluyo que lo ideal sería sesgar el número de muestras a solo la Ciudad de México. 
 
-<center><img src="imagenes/data_cdmx.jpeg" width="25%" height="25%"></center>
+<center><img src="imagenes/data_cdmx.jpeg" width="40%" height="40%"></center>
 
 --- 
 
