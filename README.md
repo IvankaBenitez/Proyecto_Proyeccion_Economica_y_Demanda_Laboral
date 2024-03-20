@@ -50,7 +50,6 @@ A continuación se encuentra la implementación de un modelo de Regresión Linea
 
 Pasos a seguir:
 ##### 1. Importación de bibliotecas:
-
   - Utilizamos pandas para la manipulación y análisis de datos tabulares.
   - sklearn.model_selection para dividir los datos en conjuntos de entrenamiento y prueba.
   - sklearn.linear_model para construir y ajustar el modelo de regresión lineal.
@@ -58,24 +57,33 @@ Pasos a seguir:
   - matplotlib.pyplot para visualizar la regresión lineal.
 
 ##### 2. Selección de características:
-
   Seleccionamos las características relevantes, como Grupo_edad y Actividad_economica, como variables independientes (X), y Numero_personas como la variable dependiente (y).
 ##### 3. Preprocesamiento de datos:
-
   Convertimos las características categóricas en variables dummy utilizando pd.get_dummies() para su uso en el modelo de regresión lineal.
 ##### 4. División de datos:
-
   Dividimos el conjunto de datos en conjuntos de entrenamiento (80%) y prueba (20%) utilizando train_test_split().
 ##### 5. Entrenamiento del modelo:
-
   Inicializamos un objeto LinearRegression() como nuestro modelo y lo ajustamos a los datos de entrenamiento con fit().
 ##### 6. Evaluación del modelo:
-
   Realizamos predicciones en el conjunto de prueba con predict() y calculamos el error cuadrático medio (MSE) entre las predicciones y los valores reales con mean_squared_error().
 ##### 7. Visualización de resultados:
+  Imprimimos los coeficientes del modelo (las pendientes de las características) y el intercepto para comprender mejor la relación entre las variables.
+  Visualizamos la [regresión lineal](imagenes/reg_lin_primera_prueba.png) trazando una gráfica de dispersión que muestra los valores reales versus las predicciones, lo que nos brinda una idea de qué tan bien se ajusta nuestro modelo a los datos.
 
-Imprimimos los coeficientes del modelo (las pendientes de las características) y el intercepto para comprender mejor la relación entre las variables.
-Visualizamos la [regresión lineal](imagenes/reg_lin_primera_prueba.png) trazando una gráfica de dispersión que muestra los valores reales versus las predicciones, lo que nos brinda una idea de qué tan bien se ajusta nuestro modelo a los datos.
+--- 
+#### 📈: Implementación Modelo de Regresión Polinomial 
+
+Se realizó un código que implementa un modelo de regresión polinomial para predecir el número de personas (Numero_personas) en función de las características Grupo_edad y Actividad_economica. Donde se importaron las bibliotecas necesarias para el manejo de los datos, se definieron las caracteristicas y las caracteristicas categóricas. Una vez hecho esto, se dividió el conjunto de datos en conjuntos de entrenamiento, validación y pruebas, usando 'train_test_split()'. 
+
+Este código es una implementación básica de regresión polinomial utilizando Python y las bibliotecas de aprendizaje automático de sklearn. 
+
+Después de visualizar y analizar los resultados, concluimos que el modelo de regresión polinomial no fue efectivo en este caso. 
+<center><img src="imagenes/regr_polinomial.png" width="70%" height="60%"></center>
+Nuestra interpretación se basa en los siguientes puntos:
+
+- Error Cuadrático Medio (ECM): Observamos que tanto el ECM en el conjunto de validación como en el conjunto de pruebas son muy altos. Esto indica que el modelo no se ajusta bien a los datos, ya que hay una gran diferencia entre los valores reales y las predicciones del modelo.
+
+- Coeficientes del Modelo: Al analizar los coeficientes del modelo, encontramos que son extremadamente grandes y variados en magnitud. Esto sugiere que el modelo está sobreajustado a los datos de entrenamiento, lo que resulta en coeficientes poco realistas y difíciles de interpretar. Además, el intercepto del modelo también es muy grande.
 
 --- 
 
